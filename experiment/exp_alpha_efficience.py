@@ -271,7 +271,6 @@ if __name__ == "__main__":
     ]  
 
     region_materials_path = "experiment/materials/query_region_infos_alpha.json"
-    # region_materials_path = "experiment/materials/query_region_infos_alpha_sample.json"   # for test
 
     data_prepare = DataPreparationProcess(args.wsi_file_path, 
                                           wsi_names,
@@ -283,7 +282,6 @@ if __name__ == "__main__":
                                      encoder)
 
     for step in [224, 200, 150, 100, 80, 60, 50]:
-    # for step in [100, 80, 60, 50]:
         database_path = f"data/vector_database_TCGA_{step}"
         basic_retriever = Image2Image_Retriever_Qdrant(encoder, database_path)
         region_retriever = Image2Image_Region_Retriever(basic_retriever, encoder)

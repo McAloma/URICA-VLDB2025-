@@ -207,7 +207,6 @@ if __name__ == "__main__":
     region_retriever = Adjacent_Region_Retriever(basic_retriever, encoder)
 
     materials_path = "experiment/materials/query_region_infos_camelyon.json"
-    # materials_path = "experiment/materials/query_region_infos_camelyon_sample.json"
 
     query_source = [
         "tumor_016.tif", "tumor_017.tif", "tumor_018.tif", "tumor_019.tif", "tumor_020.tif",  

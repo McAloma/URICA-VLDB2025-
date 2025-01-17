@@ -173,16 +173,12 @@ if __name__ == "__main__":
 
     source_materials_path = "experiment/materials/query_source.json"
     region_materials_path = "experiment/materials/query_slice_infos.json"
-    # region_materials_path = "experiment/materials/query_slice_infos_example.json"  # for test
 
     query_source = sample_query_source(args.target_file, source_materials_path, sample_n=50)
-    # query_source = [
-    #     "b545c7e6-8318-47e1-8ed4-62a5883a1d1c",
-    # # ]
-    # data_prepare = DataPreparationProcess(args.wsi_file_path, 
-    #                                       query_source, 
-    #                                       region_materials_path)
-    # data_prepare.generation_query_slice()
+    data_prepare = DataPreparationProcess(args.wsi_file_path, 
+                                          query_source, 
+                                          region_materials_path)
+    data_prepare.generation_query_slice()
 
     exp = Inter_Retrieval_experiment(args.wsi_file_path, 
                                      region_materials_path,

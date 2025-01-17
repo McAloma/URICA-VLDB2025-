@@ -187,9 +187,6 @@ if __name__ == "__main__":
 
     source_materials_path = "experiment/materials/query_source.json"
     region_materials_path = "experiment/materials/query_region_infos.json"
-    # region_materials_path = "experiment/materials/query_region_infos_sample.json" 
-
-
 
     exp = Inter_Retrieval_experiment(args.wsi_file_path, 
                                      region_materials_path,

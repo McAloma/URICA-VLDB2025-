@@ -45,20 +45,3 @@ SIM Avg: 1.0000
 SIM Avg: 0.9833
 SIM Avg: 0.9250
 Running Times: 49.9757
-
-Experiment Date: 2025-01-15 17:01:06
---------------------------------------------------
-Parameters: preprocess=evolution, evaluation=boc, date=2025-01-15
-SIM Avg: 0.7000
-SIM Avg: 0.3667
-SIM Avg: 0.2875
-Running Times: 636.2895
-
-Experiment Date: 2025-01-15 19:50:02
---------------------------------------------------
-Parameters: preprocess=evolution, evaluation=traversal, date=2025-01-15
-SIM Avg: 0.7000
-SIM Avg: 0.3667
-SIM Avg: 0.2875
-Running Times: 506.2065
-

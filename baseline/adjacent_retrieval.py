@@ -126,12 +126,12 @@ class Adjacent_Region_Retriever():
         mid_x = x + width // 2
         mid_y = y + height // 2
 
-        redifine_width = int((width * height * ratio) ** 0.5)   # ratio = width / heigh
+        redifine_width = int((width * height * ratio) ** 0.5) 
         redifine_height = int(redifine_width / ratio)
         redifine_x = max(0, mid_x - redifine_width // 2)
         redifine_y = max(0, mid_y - redifine_height // 2)
 
-        return [redifine_x, redifine_y, redifine_width, redifine_height, 0, 0]     # with level 0 and angle 0
+        return [redifine_x, redifine_y, redifine_width, redifine_height, 0, 0]  
 
     def retrieve(self, image):
         width, height = image.size

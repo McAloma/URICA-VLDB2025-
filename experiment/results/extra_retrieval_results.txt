@@ -30,22 +30,6 @@ Parameters: preprocess=kmeans, verification=traversal, date=2025-01-13
 @5 IOU Avg: 0.0107, SIM Avg: 0.6964
 Running Times: 515.4894
 
-Experiment Date: 2025-01-14 00:37:10
---------------------------------------------------
-Parameters: preprocess=evolution, verification=boc, date=2025-01-14
-@1 IOU Avg: 0.0144, SIM Avg: 0.6112
-@3 IOU Avg: 0.0085, SIM Avg: 0.5928
-@5 IOU Avg: 0.0058, SIM Avg: 0.5699
-Running Times: 126.7889
-
-Experiment Date: 2025-01-14 02:34:39
---------------------------------------------------
-Parameters: preprocess=evolution, verification=traversal, date=2025-01-14
-@1 IOU Avg: 0.0200, SIM Avg: 0.6429
-@3 IOU Avg: 0.0168, SIM Avg: 0.6230
-@5 IOU Avg: 0.0120, SIM Avg: 0.6046
-Running Times: 293.0133
-
 Experiment Date: 2025-01-14 03:08:21
 --------------------------------------------------
 Parameters: preprocess=others, verification=boc, date=2025-01-14

@@ -297,13 +297,9 @@ if __name__ == "__main__":
     # encoder = WSI_Image_test_Encoder()    # for test
 
     source_materials_path = "experiment/materials/query_source.json"
-    region_materials_path = "experiment/materials/query_region_infos.json"
-    # region_materials_path = "experiment/materials/query_region_infos_sample.json" 
+    region_materials_path = "experiment/materials/query_region_infos.json" 
 
     query_source = sample_query_source(args.target_file, source_materials_path, sample_n=50)
-    # query_source = [
-    #     "b545c7e6-8318-47e1-8ed4-62a5883a1d1c",
-    # ]
     data_prepare = DataPreparationProcess(args.wsi_file_path, 
                                           query_source, 
                                           region_materials_path)
@@ -313,6 +309,5 @@ if __name__ == "__main__":
                                      data_prepare.materials_path,
                                      encoder)
     
-    # folder_path = "data/thumbnail_cache_sample"
     folder_path = "data/thumbnail_cache"
     exp.main(args, folder_path)
