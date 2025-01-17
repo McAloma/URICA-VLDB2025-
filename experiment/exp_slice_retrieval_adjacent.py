@@ -138,7 +138,7 @@ class Inter_Retrieval_experiment():
             current_date = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
             f.write(f"Experiment Date: {current_date}\n")
             f.write("-" * 50 + "\n")  
-            
+
             for param_set, metrics in results.items():
                 f.write(f"Parameters: {param_set}\n")
                 f.write(f"SIM Avg: {metrics['right_at_1']:.4f}\n")
@@ -161,7 +161,7 @@ if __name__ == "__main__":
     parser.add_argument('--evaluation', type=str, default="boc")
     args = parser.parse_args() 
     
-    args.database_path = "data/vector_database_TCGA"   # 正式实验(cancle for test)
+    args.database_path = "data/vector_database_TCGA"  
 
     from src.utils.basic.encoder import WSI_Image_UNI_Encoder, WSI_Image_test_Encoder
 
