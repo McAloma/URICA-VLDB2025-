@@ -1,13 +1,10 @@
-import os, sys, argparse, random, math, cv2, time, json
+import os, sys, argparse, random, time, json
 sys.path.append("/hpc2hdd/home/rsu704/MDI_RAG_project/MDI_RAG_Image2Image_Research/")
 from datetime import datetime
-import numpy as np
-from PIL import Image
 from tqdm import tqdm
 from openslide import OpenSlide
 from concurrent.futures import ThreadPoolExecutor
 
-from src.utils.open_wsi.backgound import load_wsi_thumbnail, get_region_background_ratio
 from src.utils.basic.encoder import WSI_Image_UNI_Encoder
 from src.modules.retriever.basic_patch_retriever import Image2Image_Retriever_Qdrant
 from src.modules.retriever.slice_retriever import Image2Image_Slice_Retriever
@@ -127,12 +124,10 @@ class Inter_Retrieval_experiment():
         keys = results[0].keys()
         final_resuls = {key: 0 for key in keys}
 
-        # 遍历列表中的每个字典，累加每个键的值
         for result in results:
             for key in keys:
                 final_resuls[key] += result[key]
 
-        # 计算平均值
         num_results = len(results)
         for key in final_resuls:
             final_resuls[key] /= num_results
@@ -146,7 +141,7 @@ class Inter_Retrieval_experiment():
         with open(filename, "a+") as f:
             current_date = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
             f.write(f"Experiment Date: {current_date}\n")
-            f.write("-" * 50 + "\n")  # 分隔线，增加可读性
+            f.write("-" * 50 + "\n")  
 
             for param_set, metrics in results.items():
                 f.write(f"Parameters: {param_set}\n")
@@ -201,9 +196,7 @@ if __name__ == "__main__":
 
     # ---------------------------- Ablation Experiment ----------------------------
 
-    # for preprocess in ["spectral", "kmeans", "others"]:
-    #     for evaluation in ["boc", "traversal"]:
-    for preprocess in ["evolution"]:
+    for preprocess in ["spectral", "kmeans", "others"]:
         for evaluation in ["boc", "traversal"]:
                 args.preprocess = preprocess
                 args.evaluation = evaluation

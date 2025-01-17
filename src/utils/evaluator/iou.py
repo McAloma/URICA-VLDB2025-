@@ -1,5 +1,4 @@
-import sys, cv2
-sys.path.append("/hpc2hdd/home/rsu704/MDI_RAG_project/MDI_RAG_Image2Image_Research/")
+import cv2
 
 
 def region_retrieval_self_IoU(query_param, region_candidate):

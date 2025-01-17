@@ -1,5 +1,4 @@
-import os, sys, argparse, random, math, cv2, time, json
-sys.path.append("/hpc2hdd/home/rsu704/MDI_RAG_project/MDI_RAG_Image2Image_Research/")
+import os, argparse, random, math, cv2, time, json
 from datetime import datetime
 import numpy as np
 from PIL import Image
@@ -121,7 +120,7 @@ class Inter_Retrieval_experiment():
         dir_path = os.path.join(self.wsi_file_path, file_name)
         wsi_name = None
         for filename in os.listdir(dir_path):
-            if filename.endswith('.svs'):  # 检查文件扩展名
+            if filename.endswith('.svs'): 
                 wsi_name = filename
                 break
         if wsi_name == None:
@@ -139,10 +138,9 @@ class Inter_Retrieval_experiment():
         ratio = slide.level_downsamples[target_level]
 
         w, h = int(w), int(h)
-        canvas_size = int(math.sqrt(w**2 + h**2))  # square canvas
+        canvas_size = int(math.sqrt(w**2 + h**2))  
         canvas = Image.new("RGB", (canvas_size, canvas_size), (255, 255, 255))
 
-        # true position with center point
         x = int((x - canvas_size // 2) * ratio)
         y = int((y - canvas_size // 2) * ratio)
         angle = theta
@@ -200,8 +198,8 @@ class Inter_Retrieval_experiment():
         return res
     
     def calculate_at_k(self, scores, k):
-        scores = sorted(scores, reverse=True)  # 从大到小排序
-        scores = scores[:k] + [0] * (k - len(scores))  # 如果长度不足，补充 0
+        scores = sorted(scores, reverse=True)  
+        scores = scores[:k] + [0] * (k - len(scores)) 
         return np.mean(scores)
 
     def main(self, args, folder_path):
@@ -253,12 +251,10 @@ class Inter_Retrieval_experiment():
         keys = results[0].keys()
         final_resuls = {key: 0 for key in keys}
 
-        # 遍历列表中的每个字典，累加每个键的值
         for result in results:
             for key in keys:
                 final_resuls[key] += result[key]
 
-        # 计算平均值
         num_results = len(results)
         for key in final_resuls:
             final_resuls[key] /= num_results
@@ -272,7 +268,7 @@ class Inter_Retrieval_experiment():
         with open(filename, "a+") as f:
             current_date = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
             f.write(f"Experiment Date: {current_date}\n")
-            f.write("-" * 50 + "\n")  # 分隔线，增加可读性
+            f.write("-" * 50 + "\n") 
 
             for param_set, metrics in results.items():
                 f.write(f"Parameters: {param_set}\n")
@@ -301,8 +297,8 @@ if __name__ == "__main__":
     # encoder = WSI_Image_test_Encoder()    # for test
 
     source_materials_path = "experiment/materials/query_source.json"
-    # region_materials_path = "experiment/materials/query_region_infos.json"
-    region_materials_path = "experiment/materials/query_region_infos_sample.json"  # small set for sigmod26 exp
+    region_materials_path = "experiment/materials/query_region_infos.json"
+    # region_materials_path = "experiment/materials/query_region_infos_sample.json" 
 
     query_source = sample_query_source(args.target_file, source_materials_path, sample_n=50)
     # query_source = [

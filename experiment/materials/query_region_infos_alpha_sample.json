@@ -1,6 +1,16 @@
 [
-    [
-        "http://mdi.hkust-gz.edu.cn/wsi/metaservice/api/region/openslide/258992-30.tiff/2486/3815/535/1195/3",
-        -25
-    ]
+    {
+        "position": [
+            3401,
+            1729
+        ],
+        "size": [
+            1630,
+            567
+        ],
+        "level": 2,
+        "angle": 52,
+        "wsi_dir": "e986e7c8-32b0-4f46-8721-33172a9147d8",
+        "wsi_name": "TCGA-E9-A5UP-01Z-00-DX1.135466CC-601C-48B2-935D-42F8D7C4CDF7.svs"
+    }
 ]

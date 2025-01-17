@@ -1,8 +1,7 @@
-import sys, math
-sys.path.append("/hpc2hdd/home/rsu704/MDI_RAG_project/MDI_RAG_Image2Image_Research/")
+import math
 import numpy as np
 from itertools import combinations
-from collections import Counter, defaultdict
+from collections import defaultdict
 
 from src.utils.evaluator.cos_sim import cos_sim_list
 
@@ -62,7 +61,7 @@ def find_min_variance_BoC(delta_list, delta_lens=0.15, delta_angle=30):
             bag_of_angle1[index1].append(point)
 
             index2 = str(((angle-(delta_angle/2)) // delta_angle) % (360 / delta_angle))
-            if index2 == "5.0" and angle < 0:     # 处理循环
+            if index2 == "5.0" and angle < 0:    
                 point = (point[0], point[1]+2*math.pi) 
             bag_of_angle2[index2].append(point)
     
@@ -119,15 +118,15 @@ def single_anchor_evaluation(query_region, target_pos, target_name, target_level
         res_pos = res.payload["position"]
         retrieve_x, retrieve_y = res_pos
 
-        delta_list = []     # 保存检索结果的距离和角度变化
+        delta_list = []     
         for valid_pos in valid_results:
             valid_anchor_x, valid_anchor_y = valid_pos
             valid_retrieved_results = valid_results[valid_pos]
             for valid_anchor_res in valid_retrieved_results: 
                 valid_x, valid_y = valid_anchor_res.payload["position"]
 
-                retrieve_vec = (int(valid_x) - int(retrieve_x), int(retrieve_y) - int(valid_y))     # 检索结果构成的 pointer    
-                target_vec = (valid_anchor_x - anchor_x, anchor_y - valid_anchor_y)                 # query region 中构成的 pointer
+                retrieve_vec = (int(valid_x) - int(retrieve_x), int(retrieve_y) - int(valid_y))     
+                target_vec = (valid_anchor_x - anchor_x, anchor_y - valid_anchor_y)                 
 
                 delta_distance, delta_angle = get_delta(target_vec, retrieve_vec)
                 if 0.75 < delta_distance < 1.5:
@@ -138,7 +137,7 @@ def single_anchor_evaluation(query_region, target_pos, target_name, target_level
         else:
             combination, _ = find_min_variance_traversal(delta_list) 
 
-        if combination and all(i is not None and i != [] for i in combination):     # 检查 combination 不为空
+        if combination and all(i is not None and i != [] for i in combination):    
             width, height = query_region.size
 
             avg_distence = sum([i[0] for i in combination]) / len(combination)

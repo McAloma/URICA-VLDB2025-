@@ -1,12 +1,10 @@
-import sys, cv2, os, math
-sys.path.append("/hpc2hdd/home/rsu704/MDI_RAG_project/MDI_RAG_Image2Image_Research/")
+import cv2, os, math
 from PIL import Image
 import numpy as np
 from openslide import OpenSlide
 
 
 def WSI_background_detect(wsi_image):
-    """ 用 OTSU 来确定二值化阈值 """
     gray_image = wsi_image.convert("L")
     image_np = np.array(gray_image)
     if image_np.dtype != np.uint8:
@@ -18,10 +16,9 @@ def WSI_background_detect(wsi_image):
     return binary_image_pil
 
 def load_wsi_thumbnail(slide):
-    """ 加载 WSI 缩略图 """
     levels = slide.level_count
     width, height = slide.level_dimensions[levels-1][0], slide.level_dimensions[levels-1][1]
-    thumbnail = slide.read_region((0, 0), levels-1, (width, height))    # thumbnail
+    thumbnail = slide.read_region((0, 0), levels-1, (width, height))   
     thumbnail = thumbnail.convert('RGB')
 
     background = WSI_background_detect(thumbnail)
@@ -29,7 +26,6 @@ def load_wsi_thumbnail(slide):
     return thumbnail, background, levels
 
 def get_patch_background_ratio(slide, background, infos):
-    """ 计算 Patch 背景比率 """
     target_level = infos["level"]
     ratio = slide.level_downsamples[-1] / slide.level_downsamples[target_level]
 
@@ -43,7 +39,6 @@ def get_patch_background_ratio(slide, background, infos):
     return patch_background, white_pixel_ratio
 
 def get_region_background_ratio(slide, background, infos):
-    """ 计算 Region 背景比率 """
     target_level = infos["level"]
     ratio = slide.level_downsamples[-1] / slide.level_downsamples[target_level]
 
@@ -51,7 +46,7 @@ def get_region_background_ratio(slide, background, infos):
     w, h = int(infos["size"][0] // ratio), int(infos["size"][1] // ratio)
     angle = infos["angle"]
 
-    canvas_size = int(math.sqrt(w**2 + h**2))  # square canvas
+    canvas_size = int(math.sqrt(w**2 + h**2)) 
     canvas = Image.new("1", (canvas_size, canvas_size), 255)
 
 
@@ -93,7 +88,7 @@ if __name__ == "__main__":
 
         wsi_info = {
                 "wsi_name":wsi_name,
-                "position":(4000, 4000),    # basic on level 0
+                "position":(4000, 4000),    
                 "level":1,
                 "size":(2000, 2000),
             }
@@ -112,8 +107,7 @@ if __name__ == "__main__":
         patch_background.save("image/TCGA/patch_background.png")
         print(f"Background Ratio: {white_pixel_ratio}")
 
-        # region background
-        wsi_info["position"] = (5000, 5000)     # 中心点
+        wsi_info["position"] = (5000, 5000)   
         wsi_info['angle'] = 45.13
         patch_background, white_pixel_ratio = get_region_background_ratio(slide, background, wsi_info)
         patch_background.save("image/TCGA/region_background.png")

@@ -1,5 +1,3 @@
-import sys
-sys.path.append("/hpc2hdd/home/rsu704/MDI_RAG_project/MDI_RAG_Image2Image_Research/")
 from PIL import Image
 from torch.utils.data import Dataset
 

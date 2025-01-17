@@ -1,5 +1,4 @@
-import os, sys, argparse, random, math, cv2, time, json
-sys.path.append("/hpc2hdd/home/rsu704/MDI_RAG_project/MDI_RAG_Image2Image_Research/")
+import os, argparse, random, math, time, json
 from datetime import datetime
 import numpy as np
 from PIL import Image
@@ -8,7 +7,6 @@ from tqdm import tqdm
 from openslide import OpenSlide
 from concurrent.futures import ThreadPoolExecutor
 
-from src.utils.evaluator.cos_sim import cos_sim_list
 from src.utils.evaluator.mask import calculate_distribution_difference
 from src.utils.open_wsi.backgound import load_wsi_thumbnail, get_region_background_ratio
 from src.utils.basic.encoder import WSI_Image_UNI_Encoder
@@ -110,10 +108,9 @@ class Extra_Retrieval_experiment():
         ratio = slide.level_downsamples[target_level]
 
         w, h = int(region_info["size"][0]), int(region_info["size"][1])
-        canvas_size = int(math.sqrt(w**2 + h**2))  # square canvas
+        canvas_size = int(math.sqrt(w**2 + h**2)) 
         canvas = Image.new("RGB", (canvas_size, canvas_size), (255, 255, 255))
 
-        # true position with center point
         x = int((region_info["position"][0] - canvas_size // 2) * ratio)
         y = int((region_info["position"][1] - canvas_size // 2) * ratio)
         angle = region_info["angle"]
@@ -129,51 +126,12 @@ class Extra_Retrieval_experiment():
         )
 
         return region
-    
-    # def load_region_mask(self, region):
-    #     name, x, y, w, h, level, angle = region
-    #     wsi_path = os.path.join(self.wsi_file_path, name)
-    #     slide = OpenSlide(wsi_path)
-
-    #     ratio = slide.level_downsamples[-1] // slide.level_downsamples[level]
-    #     x, y, w, h = int(x // ratio), int(y // ratio), int(w // ratio), int(h // ratio)
-
-    #     mask_name = name.split(".")[0] + "_evaluation_mask.png"
-    #     mask_path = os.path.join(self.wsi_file_path, "mask", mask_name)
-    #     with Image.open(mask_path) as img:
-    #         if img.size[0] * img.size[1] > Image.MAX_IMAGE_PIXELS:
-    #             print(f"警告: {mask_name} 图像过大，无法加载。")
-    #             return None  # 或者选择其他方式处理（比如跳过、缩小等）
-        
-        
-    #     mask = Image.open(mask_path).convert('L')
-    #     canvas_size = int(math.sqrt(w**2 + h**2))
-
-    #     # 检查 canvas_size 是否超出安全限制
-    #     MAX_CANVAS_SIZE = 10000  # 可根据需要调整限制
-    #     if canvas_size > MAX_CANVAS_SIZE:
-    #         print(f"警告: canvas_size ({canvas_size}) 超出允许范围，调整为 {MAX_CANVAS_SIZE}.")
-    #         canvas_size = MAX_CANVAS_SIZE
-
-    #     canvas = Image.new("1", (canvas_size, canvas_size), 255)
-    #     cropped = mask.crop((x-canvas_size//2, y-canvas_size//2, x+canvas_size//2, y+canvas_size//2))
-    #     canvas.paste(cropped, (0, 0))
-    #     rotated_canvas = canvas.rotate(-angle, resample=Image.Resampling.BICUBIC, expand=False)
-
-    #     final_crop_left = (rotated_canvas.width - w) // 2
-    #     final_crop_top = (rotated_canvas.height - h) // 2
-    #     region_mask = rotated_canvas.crop(
-    #         (final_crop_left, final_crop_top, final_crop_left + w, final_crop_top + h)
-    #     )
-        
-    #     return region_mask
 
     def load_region_mask(self, region):
         name, x, y, w, h, level, angle = region
         wsi_path = os.path.join(self.wsi_file_path, name)
         slide = OpenSlide(wsi_path)
 
-        # 这里的 mask 不一定在最后一层，先要通过 mask 尺寸获得目标 level
         mask_name = name.split(".")[0] + "_evaluation_mask.png"
         mask_path = os.path.join(self.wsi_file_path, "mask", mask_name)
         mask = Image.open(mask_path).convert('L')
@@ -213,8 +171,8 @@ class Extra_Retrieval_experiment():
         return res
     
     def calculate_at_k(self, scores, k):
-        scores = sorted(scores, reverse=True)  # 从大到小排序
-        scores = scores[:k] + [0] * (k - len(scores))  # 如果长度不足，补充 0
+        scores = sorted(scores, reverse=True)  
+        scores = scores[:k] + [0] * (k - len(scores))  
         return np.mean(scores)
 
     def main(self, args, region_retriever):
@@ -240,11 +198,6 @@ class Extra_Retrieval_experiment():
             sim_scores = [result[1] for result in region_candidate]
             iou_scores = self.score_region_mPD(query_info_list, region_candidate)
 
-            # print("Query: ", query_info_list)
-            # for i, (region, score) in enumerate(region_candidate):
-                # print(f"Candidate {i}: {region}, Score: {score}")
-            # print("Score", iou_scores, sim_scores, end-start)
-
             result = {
                 "iou_at_1": self.calculate_at_k(iou_scores, 1),
                 "sim_at_1": self.calculate_at_k(sim_scores, 1),
@@ -259,12 +212,10 @@ class Extra_Retrieval_experiment():
         keys = results[0].keys()
         final_resuls = {key: 0 for key in keys}
 
-        # 遍历列表中的每个字典，累加每个键的值
         for result in results:
             for key in keys:
                 final_resuls[key] += result[key]
 
-        # 计算平均值
         num_results = len(results)
         for key in final_resuls:
             final_resuls[key] /= num_results
@@ -278,7 +229,7 @@ class Extra_Retrieval_experiment():
         with open(filename, "a+") as f:
             current_date = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
             f.write(f"Experiment Date: {current_date}\n")
-            f.write("-" * 50 + "\n")  # 分隔线，增加可读性
+            f.write("-" * 50 + "\n") 
 
             for param_set, metrics in results.items():
                 f.write(f"Parameters: {param_set}\n")
@@ -302,14 +253,13 @@ if __name__ == "__main__":
     parser.add_argument('--evaluation', type=str, default="boc")
     args = parser.parse_args() 
     
-    args.database_path = "data/vector_database_Camelyon"   # 正式实验
+    args.database_path = "data/vector_database_Camelyon"  
 
     encoder = WSI_Image_UNI_Encoder()
     basic_retriever = Image2Image_Retriever_Qdrant(encoder, args.database_path)
     region_retriever = Image2Image_Region_Retriever(basic_retriever, encoder)
 
     materials_path = "experiment/materials/query_region_infos_camelyon.json"
-    # materials_path = "experiment/materials/query_region_infos_camelyon_sample.json"
 
     query_source = [
         "tumor_016.tif", "tumor_017.tif", "tumor_018.tif", "tumor_019.tif", "tumor_020.tif",  
@@ -320,13 +270,10 @@ if __name__ == "__main__":
                                      data_prepare.materials_path,
                                      encoder)
     
-    # exp.main(args, region_retriever)
-
 
     # ---------------------------- Ablation Experiment ----------------------------
 
-    for preprocess in ["spectral", "kmeans", "evolution", "others"]:
-    # for preprocess in ["evolution", "others"]:
+    for preprocess in ["spectral", "kmeans", "others"]:
         for evaluation in ["boc", "traversal"]:
                 args.preprocess = preprocess
                 args.evaluation = evaluation

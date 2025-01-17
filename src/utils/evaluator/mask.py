@@ -48,15 +48,6 @@ def analyze_pixel_distribution(image_path):
 
 
 if __name__ == "__main__":
-    # # read mask
-    # image_path = "data/Camelyon/mask/tumor_005_evaluation_mask.png"
-    # distribution = analyze_pixel_distribution(image_path)
-
-    # print("像素值分布情况:")
-    # for pixel_value, stats in sorted(distribution.items()):
-    #     print(f"像素值: {pixel_value}, 数量: {stats['count']}, 占比: {stats['ratio']:.4f}")
-
-    # compare mask
     image_path1 = "data/Camelyon/mask/tumor_005_evaluation_mask.png"
     image1 = Image.open(image_path1).convert('L')
 

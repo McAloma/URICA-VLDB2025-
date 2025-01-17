@@ -1,5 +1,4 @@
-import sys, time
-sys.path.append("/hpc2hdd/home/rsu704/MDI_RAG_project/MDI_RAG_Image2Image_Research/")
+import time
 from collections import deque, defaultdict
 from src.modules.retriever.basic_patch_retriever import Image2Image_Retriever_Qdrant
 
@@ -25,7 +24,7 @@ class Adjacent_Region_Retriever():
     
     def single_retrieval(self, query_image):
         results = self.retriever.retrieve(query_image, top_k=20)
-        return [(result.score, result.payload) for result in results]   # 检索结果是相似度得分和payload的索引。
+        return [(result.score, result.payload) for result in results] 
     
     def mesh_slides(self, image):
         width, height = image.size
@@ -44,18 +43,15 @@ class Adjacent_Region_Retriever():
         score_hist = defaultdict(float)
         result_hist = defaultdict(list)
         
-        # 统计每个 wsi_name 的得分总和
         for result in raw_results:
             for score, payload in result:
                 wsi_name = payload["wsi_name"]
                 score_hist[wsi_name] += score
                 result_hist[wsi_name].append((score, payload))
         
-        # 获取得分前top_n的wsi_names
         top_targets = sorted(score_hist.items(), key=lambda x: x[1], reverse=True)[:top_n]
         
-        # 返回得分最高的wsi_name，以及前top_n的wsi_name及其结果
-        most_target = top_targets[0][0]  # 得分最高的wsi_name
+        most_target = top_targets[0][0]
         return most_target, result_hist[most_target], top_targets
     
     def find_region(self, target_results):
@@ -82,13 +78,13 @@ class Adjacent_Region_Retriever():
                 int(result[1]['patch_size'][1]) * (2 ** int(result[1]['level'])), 
               ])
             for result in target_results
-        ]   # 所有 patch 的数据均还原到 level 0 上
+        ] 
             
         score_results = defaultdict(list)
         region_results = defaultdict(list)
 
         checked_index = []
-        target_deque = deque()     # 用队列来进行检索
+        target_deque = deque()  
         for i in range(len(rect_list)):
             if i in checked_index:
                 continue
@@ -178,7 +174,7 @@ if __name__ == "__main__":
     retriever = Adjacent_Region_Retriever(basic_retriever, encoder)
 
     start = time.time()
-    wsi_name, region_candidate = retriever.retrieve(query_region)  # 通过参数控制检索流程
+    wsi_name, region_candidate = retriever.retrieve(query_region)
     end = time.time()
 
     print(f"Total Retrieval Time: {end-start}")

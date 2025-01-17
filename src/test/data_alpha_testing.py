@@ -1,11 +1,7 @@
-import os, sys, timm, torch, asyncio, random, aiohttp, math
-sys.path.append("/hpc2hdd/home/rsu704/MDI_RAG_project/MDI_RAG_Image2Image_Research/")
-from io import BytesIO
-from PIL import Image
+import os, torch, asyncio, random, math
 import numpy as np
 from tqdm import tqdm
-from torchvision import transforms
-from torch.utils.data import DataLoader, Dataset
+from torch.utils.data import DataLoader
 import torch.nn.functional as F
 from openslide import OpenSlide
 
@@ -33,7 +29,6 @@ class Testing_Encoder_Continuity():
             print(f"Cannot find the WSI file in {file_path}.")
             return None
         
-        # 准备 slide 和背景缩略图
         slide = OpenSlide(wsi_path)
         num_level = slide.level_count
 
@@ -48,7 +43,7 @@ class Testing_Encoder_Continuity():
 
                 x0, y0 = random.randint(448, width - 448), random.randint(488, height - 448)
                 x1, y1 = random.randint(448, width - 448), random.randint(448, height - 448)
-                xs, ys = random.randint(-224, 224), random.randint(-224, 224)   # 取样范围是 [-2s,2s]
+                xs, ys = random.randint(-224, 224), random.randint(-224, 224)  
 
                 ture_x0, ture_y0 = int(x0 * ratio), int(y0 * ratio)
                 ture_x1, ture_y1 = int(x1 * ratio), int(y1 * ratio)
@@ -107,9 +102,9 @@ class Testing_Encoder_Continuity():
             for a, b, c in zip(orgin_sim, shift_sim, delta_list):
                 a, b = torch.abs(a), torch.abs(b)
                 if b > a:
-                    alpha = (math.log(1-b+1e-6) - math.log(1-a+1e-6)) / math.log(c+1e-6)      # In Upper Bound: alpha = (ln(1-b)-ln(1-a))/lnc (b>a)
+                    alpha = (math.log(1-b+1e-6) - math.log(1-a+1e-6)) / math.log(c+1e-6)     
                 elif b < a:
-                    alpha = (math.log(b+1e-6) - math.log(a+1e-6)) / math.log(c+1e-6)              # In Lower Bound: alpha = (lnb-lna)/lnc (b<a)
+                    alpha = (math.log(b+1e-6) - math.log(a+1e-6)) / math.log(c+1e-6)            
                 else:
                     alpha = 0
                 alpha_list.append(alpha)
@@ -154,5 +149,4 @@ if __name__ == "__main__":
         for item in alpha_results:
             file.write(f"{item}\n")  # 每个列表项写入一行
 
-    print(f"列表内容已保存到 {file_path}")
     

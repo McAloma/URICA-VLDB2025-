@@ -1,5 +1,4 @@
-import os, sys, argparse, math, cv2, time, json
-sys.path.append("/hpc2hdd/home/rsu704/MDI_RAG_project/MDI_RAG_Image2Image_Research/")
+import os, argparse, math, cv2, time, json
 from datetime import datetime
 import numpy as np
 from PIL import Image
@@ -28,10 +27,9 @@ class Inter_Retrieval_experiment():
         ratio = slide.level_downsamples[target_level]
 
         w, h = int(region_info["size"][0]), int(region_info["size"][1])
-        canvas_size = int(math.sqrt(w**2 + h**2))  # square canvas
+        canvas_size = int(math.sqrt(w**2 + h**2)) 
         canvas = Image.new("RGB", (canvas_size, canvas_size), (255, 255, 255))
 
-        # true position with center point
         x = int((region_info["position"][0] - canvas_size // 2) * ratio)
         y = int((region_info["position"][1] - canvas_size // 2) * ratio)
         angle = region_info["angle"]
@@ -58,7 +56,7 @@ class Inter_Retrieval_experiment():
                 dirnames = dirpath.split("/")
                 wsi_path = os.path.join(self.wsi_file_path,  dirnames[-1], target_wsi_name)
                 break
-        if not wsi_path:    # 如果没找到
+        if not wsi_path:  
             print(f"Can not find the WSI file in {target_wsi_name}.")
             return 
         slide = OpenSlide(wsi_path)
@@ -103,8 +101,8 @@ class Inter_Retrieval_experiment():
         return res
     
     def calculate_at_k(self, scores, k):
-        scores = sorted(scores, reverse=True)  # 从大到小排序
-        scores = scores[:k] + [0] * (k - len(scores))  # 如果长度不足，补充 0
+        scores = sorted(scores, reverse=True)  
+        scores = scores[:k] + [0] * (k - len(scores)) 
         return np.mean(scores)
 
     def main(self, args, region_retriever):
@@ -142,12 +140,10 @@ class Inter_Retrieval_experiment():
         keys = results[0].keys()
         final_resuls = {key: 0 for key in keys}
 
-        # 遍历列表中的每个字典，累加每个键的值
         for result in results:
             for key in keys:
                 final_resuls[key] += result[key]
 
-        # 计算平均值
         num_results = len(results)
         for key in final_resuls:
             final_resuls[key] /= num_results
@@ -161,7 +157,7 @@ class Inter_Retrieval_experiment():
         with open(filename, "a+") as f:
             current_date = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
             f.write(f"Experiment Date: {current_date}\n")
-            f.write("-" * 50 + "\n")  # 分隔线，增加可读性
+            f.write("-" * 50 + "\n")
 
             for param_set, metrics in results.items():
                 f.write(f"Parameters: {param_set}\n")
@@ -180,18 +176,18 @@ if __name__ == "__main__":
     parser.add_argument('--database_path', type=str, default="data/vector_database_TCGA_sample")
     args = parser.parse_args() 
     
-    args.database_path = "data/vector_database_TCGA"   # 正式实验
+    args.database_path = "data/vector_database_TCGA"  
 
     from src.utils.basic.encoder import WSI_Image_UNI_Encoder, WSI_Image_test_Encoder
     encoder = WSI_Image_UNI_Encoder()
-    # encoder = WSI_Image_test_Encoder()    # for test
+    # encoder = WSI_Image_test_Encoder()  
 
     basic_retriever = Image2Image_Retriever_Qdrant(encoder, args.database_path)
     region_retriever = Adjacent_Region_Retriever(basic_retriever, encoder)
 
     source_materials_path = "experiment/materials/query_source.json"
-    # region_materials_path = "experiment/materials/query_region_infos.json"
-    region_materials_path = "experiment/materials/query_region_infos_sample.json"  # small set for sigmod26 exp
+    region_materials_path = "experiment/materials/query_region_infos.json"
+    # region_materials_path = "experiment/materials/query_region_infos_sample.json" 
 
 
 

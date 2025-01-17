@@ -1,5 +1,4 @@
-import os, sys, argparse, random, math, cv2, time, json
-sys.path.append("/hpc2hdd/home/rsu704/MDI_RAG_project/MDI_RAG_Image2Image_Research/")
+import os, argparse, math, time, json
 from datetime import datetime
 import numpy as np
 from PIL import Image
@@ -60,13 +59,12 @@ class Extra_Retrieval_experiment():
         wsi_path = os.path.join(self.wsi_file_path, name)
         slide = OpenSlide(wsi_path)
 
-        # 这里的 mask 不一定在最后一层，先要通过 mask 尺寸获得目标 level
         mask_name = name.split(".")[0] + "_evaluation_mask.png"
         mask_path = os.path.join(self.wsi_file_path, "mask", mask_name)
         mask = Image.open(mask_path).convert('L')
         mask_width, mask_height = mask.size
 
-        target_level = -1   # 默认在最后一层
+        target_level = -1  
         for level, (width, height) in enumerate(slide.level_dimensions):
             if (width, height) == (mask_width, mask_height):
                 target_level = level
@@ -102,7 +100,7 @@ class Extra_Retrieval_experiment():
                 retrieved_region = slide.read_region((x, y), level, (w, h)).convert("RGB")
             except:
                 print(f"Error reading region at ({x}, {y})")
-                continue  # 跳过损坏的区域
+                continue 
             retrieved_embeddings = self.encoder.encode_image(retrieved_region)
             sim, _, _ = cos_sim_list(query_embedding, retrieved_embeddings)
             sim_scores.append(sim)
@@ -124,8 +122,8 @@ class Extra_Retrieval_experiment():
         return res
     
     def calculate_at_k(self, scores, k):
-        scores = sorted(scores, reverse=True)  # 从大到小排序
-        scores = scores[:k] + [0] * (k - len(scores))  # 如果长度不足，补充 0
+        scores = sorted(scores, reverse=True)  
+        scores = scores[:k] + [0] * (k - len(scores))  
         return np.mean(scores)
 
     def main(self, args, region_retriever):
@@ -142,7 +140,6 @@ class Extra_Retrieval_experiment():
                 continue
 
             start = time.time()
-            # target_wsi_name, region_candidate = region_retriever.retrieve(query_region)
             target_wsi_name, region_candidate, top_targets = region_retriever.retrieve(query_region)
             end = time.time()
 
@@ -165,12 +162,10 @@ class Extra_Retrieval_experiment():
         keys = results[0].keys()
         final_resuls = {key: 0 for key in keys}
 
-        # 遍历列表中的每个字典，累加每个键的值
         for result in results:
             for key in keys:
                 final_resuls[key] += result[key]
 
-        # 计算平均值
         num_results = len(results)
         for key in final_resuls:
             final_resuls[key] /= num_results
@@ -184,7 +179,7 @@ class Extra_Retrieval_experiment():
         with open(filename, "a+") as f:
             current_date = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
             f.write(f"Experiment Date: {current_date}\n")
-            f.write("-" * 50 + "\n")  # 分隔线，增加可读性
+            f.write("-" * 50 + "\n")
 
             for param_set, metrics in results.items():
                 f.write(f"Parameters: {param_set}\n")

@@ -1,5 +1,4 @@
-import os, sys, torch, timm
-sys.path.append("/hpc2hdd/home/rsu704/MDI_RAG_project/MDI_RAG_Image2Image_Research/")
+import os, torch, timm
 from tqdm import tqdm
 from torchvision import transforms
 
