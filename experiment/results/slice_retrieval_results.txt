@@ -1,0 +1,64 @@
+Experiment Date: 2025-01-09 20:48:35
+--------------------------------------------------
+Parameters: preprocess=spectral, evaluation=boc, date=2025-01-09
+SIM Avg: 1.0000
+SIM Avg: 0.9333
+SIM Avg: 0.9000
+Running Times: 102.3332
+
+Experiment Date: 2025-01-09 21:24:33
+--------------------------------------------------
+Parameters: preprocess=spectral, evaluation=traversal, date=2025-01-09
+SIM Avg: 1.0000
+SIM Avg: 0.9167
+SIM Avg: 0.8875
+Running Times: 107.3677
+
+Experiment Date: 2025-01-09 21:54:59
+--------------------------------------------------
+Parameters: preprocess=kmeans, evaluation=boc, date=2025-01-09
+SIM Avg: 1.0000
+SIM Avg: 0.7333
+SIM Avg: 0.5750
+Running Times: 90.7097
+
+Experiment Date: 2025-01-09 22:24:59
+--------------------------------------------------
+Parameters: preprocess=kmeans, evaluation=traversal, date=2025-01-09
+SIM Avg: 1.0000
+SIM Avg: 0.7333
+SIM Avg: 0.5750
+Running Times: 89.3959
+
+Experiment Date: 2025-01-09 22:41:28
+--------------------------------------------------
+Parameters: preprocess=others, evaluation=boc, date=2025-01-09
+SIM Avg: 1.0000
+SIM Avg: 0.9833
+SIM Avg: 0.9250
+Running Times: 48.8738
+
+Experiment Date: 2025-01-09 22:58:22
+--------------------------------------------------
+Parameters: preprocess=others, evaluation=traversal, date=2025-01-09
+SIM Avg: 1.0000
+SIM Avg: 0.9833
+SIM Avg: 0.9250
+Running Times: 49.9757
+
+Experiment Date: 2025-01-15 17:01:06
+--------------------------------------------------
+Parameters: preprocess=evolution, evaluation=boc, date=2025-01-15
+SIM Avg: 0.7000
+SIM Avg: 0.3667
+SIM Avg: 0.2875
+Running Times: 636.2895
+
+Experiment Date: 2025-01-15 19:50:02
+--------------------------------------------------
+Parameters: preprocess=evolution, evaluation=traversal, date=2025-01-15
+SIM Avg: 0.7000
+SIM Avg: 0.3667
+SIM Avg: 0.2875
+Running Times: 506.2065
+

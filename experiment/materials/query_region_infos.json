@@ -1,0 +1,1444 @@
+[
+    {
+        "position": [
+            2010,
+            1089
+        ],
+        "size": [
+            1098,
+            600
+        ],
+        "level": 2,
+        "angle": -114,
+        "wsi_dir": "03dde19f-f6f0-4b6b-a559-febbf532ca76",
+        "wsi_name": "TCGA-E9-A1NC-01Z-00-DX1.20edf036-8ba6-4187-a74c-124fc39f5aa1.svs"
+    },
+    {
+        "position": [
+            2415,
+            2006
+        ],
+        "size": [
+            467,
+            496
+        ],
+        "level": 2,
+        "angle": -19,
+        "wsi_dir": "03dde19f-f6f0-4b6b-a559-febbf532ca76",
+        "wsi_name": "TCGA-E9-A1NC-01Z-00-DX1.20edf036-8ba6-4187-a74c-124fc39f5aa1.svs"
+    },
+    {
+        "position": [
+            1513,
+            1330
+        ],
+        "size": [
+            1242,
+            617
+        ],
+        "level": 2,
+        "angle": -22,
+        "wsi_dir": "03dde19f-f6f0-4b6b-a559-febbf532ca76",
+        "wsi_name": "TCGA-E9-A1NC-01Z-00-DX1.20edf036-8ba6-4187-a74c-124fc39f5aa1.svs"
+    },
+    {
+        "position": [
+            740,
+            1785
+        ],
+        "size": [
+            994,
+            661
+        ],
+        "level": 2,
+        "angle": -141,
+        "wsi_dir": "b1a37b14-5979-41fe-9c93-0582a67cb3b5",
+        "wsi_name": "TCGA-E9-A1NA-01Z-00-DX1.2A2FE8BB-621E-43A2-8449-F8FE730C0487.svs"
+    },
+    {
+        "position": [
+            1369,
+            764
+        ],
+        "size": [
+            919,
+            1255
+        ],
+        "level": 2,
+        "angle": 173,
+        "wsi_dir": "b1a37b14-5979-41fe-9c93-0582a67cb3b5",
+        "wsi_name": "TCGA-E9-A1NA-01Z-00-DX1.2A2FE8BB-621E-43A2-8449-F8FE730C0487.svs"
+    },
+    {
+        "position": [
+            782,
+            2009
+        ],
+        "size": [
+            831,
+            1291
+        ],
+        "level": 2,
+        "angle": 51,
+        "wsi_dir": "b1a37b14-5979-41fe-9c93-0582a67cb3b5",
+        "wsi_name": "TCGA-E9-A1NA-01Z-00-DX1.2A2FE8BB-621E-43A2-8449-F8FE730C0487.svs"
+    },
+    {
+        "position": [
+            1444,
+            3336
+        ],
+        "size": [
+            507,
+            1637
+        ],
+        "level": 2,
+        "angle": 129,
+        "wsi_dir": "2e0a457c-bf0a-456f-a8d2-0b188bdb0e7a",
+        "wsi_name": "TCGA-A2-A3XV-01Z-00-DX1.4B58B7CD-B3F6-4C31-863F-924D291EF17C.svs"
+    },
+    {
+        "position": [
+            2673,
+            1673
+        ],
+        "size": [
+            808,
+            1485
+        ],
+        "level": 2,
+        "angle": -94,
+        "wsi_dir": "2e0a457c-bf0a-456f-a8d2-0b188bdb0e7a",
+        "wsi_name": "TCGA-A2-A3XV-01Z-00-DX1.4B58B7CD-B3F6-4C31-863F-924D291EF17C.svs"
+    },
+    {
+        "position": [
+            1577,
+            1370
+        ],
+        "size": [
+            1490,
+            1150
+        ],
+        "level": 2,
+        "angle": -166,
+        "wsi_dir": "2e0a457c-bf0a-456f-a8d2-0b188bdb0e7a",
+        "wsi_name": "TCGA-A2-A3XV-01Z-00-DX1.4B58B7CD-B3F6-4C31-863F-924D291EF17C.svs"
+    },
+    {
+        "position": [
+            839,
+            1099
+        ],
+        "size": [
+            727,
+            912
+        ],
+        "level": 3,
+        "angle": -177,
+        "wsi_dir": "2e0a457c-bf0a-456f-a8d2-0b188bdb0e7a",
+        "wsi_name": "TCGA-A2-A3XV-01Z-00-DX1.4B58B7CD-B3F6-4C31-863F-924D291EF17C.svs"
+    },
+    {
+        "position": [
+            789,
+            783
+        ],
+        "size": [
+            703,
+            1085
+        ],
+        "level": 3,
+        "angle": -123,
+        "wsi_dir": "2e0a457c-bf0a-456f-a8d2-0b188bdb0e7a",
+        "wsi_name": "TCGA-A2-A3XV-01Z-00-DX1.4B58B7CD-B3F6-4C31-863F-924D291EF17C.svs"
+    },
+    {
+        "position": [
+            1196,
+            1767
+        ],
+        "size": [
+            806,
+            927
+        ],
+        "level": 3,
+        "angle": -10,
+        "wsi_dir": "2e0a457c-bf0a-456f-a8d2-0b188bdb0e7a",
+        "wsi_name": "TCGA-A2-A3XV-01Z-00-DX1.4B58B7CD-B3F6-4C31-863F-924D291EF17C.svs"
+    },
+    {
+        "position": [
+            5783,
+            3859
+        ],
+        "size": [
+            1176,
+            1911
+        ],
+        "level": 2,
+        "angle": 24,
+        "wsi_dir": "bcd6977f-b269-48c4-b088-ddf8d6d95240",
+        "wsi_name": "TCGA-GM-A2DF-01Z-00-DX1.CD0BE6D7-2DB3-4193-84CC-F9BE7BF18CC2.svs"
+    },
+    {
+        "position": [
+            3354,
+            2952
+        ],
+        "size": [
+            1611,
+            1230
+        ],
+        "level": 2,
+        "angle": -170,
+        "wsi_dir": "bcd6977f-b269-48c4-b088-ddf8d6d95240",
+        "wsi_name": "TCGA-GM-A2DF-01Z-00-DX1.CD0BE6D7-2DB3-4193-84CC-F9BE7BF18CC2.svs"
+    },
+    {
+        "position": [
+            3199,
+            4075
+        ],
+        "size": [
+            1361,
+            1539
+        ],
+        "level": 2,
+        "angle": -27,
+        "wsi_dir": "bcd6977f-b269-48c4-b088-ddf8d6d95240",
+        "wsi_name": "TCGA-GM-A2DF-01Z-00-DX1.CD0BE6D7-2DB3-4193-84CC-F9BE7BF18CC2.svs"
+    },
+    {
+        "position": [
+            972,
+            553
+        ],
+        "size": [
+            894,
+            579
+        ],
+        "level": 3,
+        "angle": -132,
+        "wsi_dir": "bcd6977f-b269-48c4-b088-ddf8d6d95240",
+        "wsi_name": "TCGA-GM-A2DF-01Z-00-DX1.CD0BE6D7-2DB3-4193-84CC-F9BE7BF18CC2.svs"
+    },
+    {
+        "position": [
+            872,
+            987
+        ],
+        "size": [
+            492,
+            489
+        ],
+        "level": 3,
+        "angle": 63,
+        "wsi_dir": "bcd6977f-b269-48c4-b088-ddf8d6d95240",
+        "wsi_name": "TCGA-GM-A2DF-01Z-00-DX1.CD0BE6D7-2DB3-4193-84CC-F9BE7BF18CC2.svs"
+    },
+    {
+        "position": [
+            1213,
+            1045
+        ],
+        "size": [
+            864,
+            497
+        ],
+        "level": 3,
+        "angle": 2,
+        "wsi_dir": "bcd6977f-b269-48c4-b088-ddf8d6d95240",
+        "wsi_name": "TCGA-GM-A2DF-01Z-00-DX1.CD0BE6D7-2DB3-4193-84CC-F9BE7BF18CC2.svs"
+    },
+    {
+        "position": [
+            3544,
+            1980
+        ],
+        "size": [
+            1309,
+            716
+        ],
+        "level": 2,
+        "angle": 60,
+        "wsi_dir": "f05745bd-4371-431a-bd78-69f62e69f524",
+        "wsi_name": "TCGA-E2-A1II-01Z-00-DX1.7F782477-0F92-4C57-8735-A1E3F95A6B94.svs"
+    },
+    {
+        "position": [
+            4192,
+            2253
+        ],
+        "size": [
+            455,
+            1016
+        ],
+        "level": 2,
+        "angle": -179,
+        "wsi_dir": "f05745bd-4371-431a-bd78-69f62e69f524",
+        "wsi_name": "TCGA-E2-A1II-01Z-00-DX1.7F782477-0F92-4C57-8735-A1E3F95A6B94.svs"
+    },
+    {
+        "position": [
+            1952,
+            829
+        ],
+        "size": [
+            1042,
+            527
+        ],
+        "level": 3,
+        "angle": -119,
+        "wsi_dir": "f05745bd-4371-431a-bd78-69f62e69f524",
+        "wsi_name": "TCGA-E2-A1II-01Z-00-DX1.7F782477-0F92-4C57-8735-A1E3F95A6B94.svs"
+    },
+    {
+        "position": [
+            1982,
+            1065
+        ],
+        "size": [
+            1005,
+            879
+        ],
+        "level": 3,
+        "angle": 92,
+        "wsi_dir": "f05745bd-4371-431a-bd78-69f62e69f524",
+        "wsi_name": "TCGA-E2-A1II-01Z-00-DX1.7F782477-0F92-4C57-8735-A1E3F95A6B94.svs"
+    },
+    {
+        "position": [
+            2071,
+            806
+        ],
+        "size": [
+            730,
+            771
+        ],
+        "level": 3,
+        "angle": 105,
+        "wsi_dir": "f05745bd-4371-431a-bd78-69f62e69f524",
+        "wsi_name": "TCGA-E2-A1II-01Z-00-DX1.7F782477-0F92-4C57-8735-A1E3F95A6B94.svs"
+    },
+    {
+        "position": [
+            2607,
+            2399
+        ],
+        "size": [
+            1434,
+            1452
+        ],
+        "level": 2,
+        "angle": 74,
+        "wsi_dir": "032fc1ed-c515-4b26-a229-f67c1eb6fdc3",
+        "wsi_name": "TCGA-AC-A5XU-01Z-00-DX1.1AEEFAAF-0906-4086-8022-13B689FAB9F5.svs"
+    },
+    {
+        "position": [
+            1992,
+            2735
+        ],
+        "size": [
+            1714,
+            1061
+        ],
+        "level": 2,
+        "angle": -167,
+        "wsi_dir": "032fc1ed-c515-4b26-a229-f67c1eb6fdc3",
+        "wsi_name": "TCGA-AC-A5XU-01Z-00-DX1.1AEEFAAF-0906-4086-8022-13B689FAB9F5.svs"
+    },
+    {
+        "position": [
+            916,
+            1738
+        ],
+        "size": [
+            1068,
+            906
+        ],
+        "level": 2,
+        "angle": -153,
+        "wsi_dir": "032fc1ed-c515-4b26-a229-f67c1eb6fdc3",
+        "wsi_name": "TCGA-AC-A5XU-01Z-00-DX1.1AEEFAAF-0906-4086-8022-13B689FAB9F5.svs"
+    },
+    {
+        "position": [
+            1152,
+            761
+        ],
+        "size": [
+            498,
+            921
+        ],
+        "level": 3,
+        "angle": 76,
+        "wsi_dir": "032fc1ed-c515-4b26-a229-f67c1eb6fdc3",
+        "wsi_name": "TCGA-AC-A5XU-01Z-00-DX1.1AEEFAAF-0906-4086-8022-13B689FAB9F5.svs"
+    },
+    {
+        "position": [
+            960,
+            1362
+        ],
+        "size": [
+            763,
+            906
+        ],
+        "level": 3,
+        "angle": 130,
+        "wsi_dir": "032fc1ed-c515-4b26-a229-f67c1eb6fdc3",
+        "wsi_name": "TCGA-AC-A5XU-01Z-00-DX1.1AEEFAAF-0906-4086-8022-13B689FAB9F5.svs"
+    },
+    {
+        "position": [
+            761,
+            791
+        ],
+        "size": [
+            591,
+            871
+        ],
+        "level": 3,
+        "angle": 13,
+        "wsi_dir": "032fc1ed-c515-4b26-a229-f67c1eb6fdc3",
+        "wsi_name": "TCGA-AC-A5XU-01Z-00-DX1.1AEEFAAF-0906-4086-8022-13B689FAB9F5.svs"
+    },
+    {
+        "position": [
+            4808,
+            1358
+        ],
+        "size": [
+            1972,
+            1373
+        ],
+        "level": 2,
+        "angle": 159,
+        "wsi_dir": "465c44ea-fe8c-405e-8e21-c593b009d374",
+        "wsi_name": "TCGA-AR-A1AN-01Z-00-DX1.1118F9FE-6DF2-4496-B102-D3A10D332EC0.svs"
+    },
+    {
+        "position": [
+            4563,
+            1851
+        ],
+        "size": [
+            1037,
+            1324
+        ],
+        "level": 2,
+        "angle": -105,
+        "wsi_dir": "465c44ea-fe8c-405e-8e21-c593b009d374",
+        "wsi_name": "TCGA-AR-A1AN-01Z-00-DX1.1118F9FE-6DF2-4496-B102-D3A10D332EC0.svs"
+    },
+    {
+        "position": [
+            2494,
+            1052
+        ],
+        "size": [
+            510,
+            528
+        ],
+        "level": 3,
+        "angle": 41,
+        "wsi_dir": "465c44ea-fe8c-405e-8e21-c593b009d374",
+        "wsi_name": "TCGA-AR-A1AN-01Z-00-DX1.1118F9FE-6DF2-4496-B102-D3A10D332EC0.svs"
+    },
+    {
+        "position": [
+            2583,
+            382
+        ],
+        "size": [
+            765,
+            466
+        ],
+        "level": 3,
+        "angle": -168,
+        "wsi_dir": "465c44ea-fe8c-405e-8e21-c593b009d374",
+        "wsi_name": "TCGA-AR-A1AN-01Z-00-DX1.1118F9FE-6DF2-4496-B102-D3A10D332EC0.svs"
+    },
+    {
+        "position": [
+            2941,
+            2421
+        ],
+        "size": [
+            1654,
+            449
+        ],
+        "level": 2,
+        "angle": -169,
+        "wsi_dir": "32732b3d-a99a-4653-b8ef-763a15828349",
+        "wsi_name": "TCGA-D8-A1X9-01Z-00-DX1.28CE7849-EEC5-4ABB-A319-A977A1FD3CD1.svs"
+    },
+    {
+        "position": [
+            3168,
+            3273
+        ],
+        "size": [
+            861,
+            1728
+        ],
+        "level": 2,
+        "angle": 125,
+        "wsi_dir": "32732b3d-a99a-4653-b8ef-763a15828349",
+        "wsi_name": "TCGA-D8-A1X9-01Z-00-DX1.28CE7849-EEC5-4ABB-A319-A977A1FD3CD1.svs"
+    },
+    {
+        "position": [
+            1411,
+            1312
+        ],
+        "size": [
+            861,
+            886
+        ],
+        "level": 2,
+        "angle": 113,
+        "wsi_dir": "32732b3d-a99a-4653-b8ef-763a15828349",
+        "wsi_name": "TCGA-D8-A1X9-01Z-00-DX1.28CE7849-EEC5-4ABB-A319-A977A1FD3CD1.svs"
+    },
+    {
+        "position": [
+            748,
+            625
+        ],
+        "size": [
+            596,
+            531
+        ],
+        "level": 3,
+        "angle": 140,
+        "wsi_dir": "32732b3d-a99a-4653-b8ef-763a15828349",
+        "wsi_name": "TCGA-D8-A1X9-01Z-00-DX1.28CE7849-EEC5-4ABB-A319-A977A1FD3CD1.svs"
+    },
+    {
+        "position": [
+            1175,
+            1025
+        ],
+        "size": [
+            550,
+            1094
+        ],
+        "level": 3,
+        "angle": -12,
+        "wsi_dir": "32732b3d-a99a-4653-b8ef-763a15828349",
+        "wsi_name": "TCGA-D8-A1X9-01Z-00-DX1.28CE7849-EEC5-4ABB-A319-A977A1FD3CD1.svs"
+    },
+    {
+        "position": [
+            1650,
+            1586
+        ],
+        "size": [
+            1143,
+            1034
+        ],
+        "level": 3,
+        "angle": -85,
+        "wsi_dir": "32732b3d-a99a-4653-b8ef-763a15828349",
+        "wsi_name": "TCGA-D8-A1X9-01Z-00-DX1.28CE7849-EEC5-4ABB-A319-A977A1FD3CD1.svs"
+    },
+    {
+        "position": [
+            3166,
+            1608
+        ],
+        "size": [
+            1859,
+            638
+        ],
+        "level": 2,
+        "angle": -165,
+        "wsi_dir": "b58e69c3-e152-4a8f-a710-6760547578bc",
+        "wsi_name": "TCGA-B6-A0WT-01Z-00-DX1.7ED21DA2-A3D8-4DCA-9742-963879A658D8.svs"
+    },
+    {
+        "position": [
+            5672,
+            4277
+        ],
+        "size": [
+            1943,
+            1359
+        ],
+        "level": 2,
+        "angle": -61,
+        "wsi_dir": "b58e69c3-e152-4a8f-a710-6760547578bc",
+        "wsi_name": "TCGA-B6-A0WT-01Z-00-DX1.7ED21DA2-A3D8-4DCA-9742-963879A658D8.svs"
+    },
+    {
+        "position": [
+            6371,
+            2737
+        ],
+        "size": [
+            908,
+            839
+        ],
+        "level": 2,
+        "angle": 30,
+        "wsi_dir": "b58e69c3-e152-4a8f-a710-6760547578bc",
+        "wsi_name": "TCGA-B6-A0WT-01Z-00-DX1.7ED21DA2-A3D8-4DCA-9742-963879A658D8.svs"
+    },
+    {
+        "position": [
+            689,
+            539
+        ],
+        "size": [
+            456,
+            641
+        ],
+        "level": 3,
+        "angle": 93,
+        "wsi_dir": "b58e69c3-e152-4a8f-a710-6760547578bc",
+        "wsi_name": "TCGA-B6-A0WT-01Z-00-DX1.7ED21DA2-A3D8-4DCA-9742-963879A658D8.svs"
+    },
+    {
+        "position": [
+            1505,
+            489
+        ],
+        "size": [
+            825,
+            544
+        ],
+        "level": 3,
+        "angle": 152,
+        "wsi_dir": "b58e69c3-e152-4a8f-a710-6760547578bc",
+        "wsi_name": "TCGA-B6-A0WT-01Z-00-DX1.7ED21DA2-A3D8-4DCA-9742-963879A658D8.svs"
+    },
+    {
+        "position": [
+            1541,
+            840
+        ],
+        "size": [
+            614,
+            587
+        ],
+        "level": 3,
+        "angle": 35,
+        "wsi_dir": "b58e69c3-e152-4a8f-a710-6760547578bc",
+        "wsi_name": "TCGA-B6-A0WT-01Z-00-DX1.7ED21DA2-A3D8-4DCA-9742-963879A658D8.svs"
+    },
+    {
+        "position": [
+            3416,
+            2299
+        ],
+        "size": [
+            1899,
+            1948
+        ],
+        "level": 2,
+        "angle": 53,
+        "wsi_dir": "471afecc-f0fb-4862-8474-b698feb6f2cb",
+        "wsi_name": "TCGA-A2-A04P-01Z-00-DX1.5B481E02-D269-4732-8FDD-6494E6EE2B71.svs"
+    },
+    {
+        "position": [
+            2539,
+            2104
+        ],
+        "size": [
+            1873,
+            1151
+        ],
+        "level": 2,
+        "angle": -79,
+        "wsi_dir": "471afecc-f0fb-4862-8474-b698feb6f2cb",
+        "wsi_name": "TCGA-A2-A04P-01Z-00-DX1.5B481E02-D269-4732-8FDD-6494E6EE2B71.svs"
+    },
+    {
+        "position": [
+            668,
+            496
+        ],
+        "size": [
+            882,
+            466
+        ],
+        "level": 3,
+        "angle": -23,
+        "wsi_dir": "471afecc-f0fb-4862-8474-b698feb6f2cb",
+        "wsi_name": "TCGA-A2-A04P-01Z-00-DX1.5B481E02-D269-4732-8FDD-6494E6EE2B71.svs"
+    },
+    {
+        "position": [
+            888,
+            596
+        ],
+        "size": [
+            505,
+            501
+        ],
+        "level": 3,
+        "angle": 113,
+        "wsi_dir": "471afecc-f0fb-4862-8474-b698feb6f2cb",
+        "wsi_name": "TCGA-A2-A04P-01Z-00-DX1.5B481E02-D269-4732-8FDD-6494E6EE2B71.svs"
+    },
+    {
+        "position": [
+            869,
+            707
+        ],
+        "size": [
+            872,
+            479
+        ],
+        "level": 3,
+        "angle": 177,
+        "wsi_dir": "471afecc-f0fb-4862-8474-b698feb6f2cb",
+        "wsi_name": "TCGA-A2-A04P-01Z-00-DX1.5B481E02-D269-4732-8FDD-6494E6EE2B71.svs"
+    },
+    {
+        "position": [
+            1241,
+            2196
+        ],
+        "size": [
+            1763,
+            1036
+        ],
+        "level": 2,
+        "angle": 127,
+        "wsi_dir": "1f4d56a0-b948-4a65-8b3a-f66d30317e0b",
+        "wsi_name": "TCGA-D8-A13Y-01Z-00-DX2.0043D2BB-B04D-4A44-AAB1-1CAAD97AC246.svs"
+    },
+    {
+        "position": [
+            1866,
+            1922
+        ],
+        "size": [
+            639,
+            1286
+        ],
+        "level": 2,
+        "angle": 29,
+        "wsi_dir": "1f4d56a0-b948-4a65-8b3a-f66d30317e0b",
+        "wsi_name": "TCGA-D8-A13Y-01Z-00-DX2.0043D2BB-B04D-4A44-AAB1-1CAAD97AC246.svs"
+    },
+    {
+        "position": [
+            1617,
+            1388
+        ],
+        "size": [
+            1735,
+            600
+        ],
+        "level": 2,
+        "angle": 114,
+        "wsi_dir": "1f4d56a0-b948-4a65-8b3a-f66d30317e0b",
+        "wsi_name": "TCGA-D8-A13Y-01Z-00-DX2.0043D2BB-B04D-4A44-AAB1-1CAAD97AC246.svs"
+    },
+    {
+        "position": [
+            658,
+            827
+        ],
+        "size": [
+            898,
+            818
+        ],
+        "level": 3,
+        "angle": -142,
+        "wsi_dir": "1f4d56a0-b948-4a65-8b3a-f66d30317e0b",
+        "wsi_name": "TCGA-D8-A13Y-01Z-00-DX2.0043D2BB-B04D-4A44-AAB1-1CAAD97AC246.svs"
+    },
+    {
+        "position": [
+            1601,
+            1465
+        ],
+        "size": [
+            1038,
+            498
+        ],
+        "level": 3,
+        "angle": 176,
+        "wsi_dir": "1f4d56a0-b948-4a65-8b3a-f66d30317e0b",
+        "wsi_name": "TCGA-D8-A13Y-01Z-00-DX2.0043D2BB-B04D-4A44-AAB1-1CAAD97AC246.svs"
+    },
+    {
+        "position": [
+            734,
+            1553
+        ],
+        "size": [
+            448,
+            478
+        ],
+        "level": 3,
+        "angle": 107,
+        "wsi_dir": "1f4d56a0-b948-4a65-8b3a-f66d30317e0b",
+        "wsi_name": "TCGA-D8-A13Y-01Z-00-DX2.0043D2BB-B04D-4A44-AAB1-1CAAD97AC246.svs"
+    },
+    {
+        "position": [
+            3667,
+            2765
+        ],
+        "size": [
+            620,
+            714
+        ],
+        "level": 2,
+        "angle": -50,
+        "wsi_dir": "efed91ed-3aea-486a-bfed-b14fbc8f2d3e",
+        "wsi_name": "TCGA-EW-A423-01Z-00-DX2.5EF1CF39-600A-4ED3-A5A2-AF4435A5F8B5.svs"
+    },
+    {
+        "position": [
+            5653,
+            3311
+        ],
+        "size": [
+            1958,
+            1129
+        ],
+        "level": 2,
+        "angle": -142,
+        "wsi_dir": "efed91ed-3aea-486a-bfed-b14fbc8f2d3e",
+        "wsi_name": "TCGA-EW-A423-01Z-00-DX2.5EF1CF39-600A-4ED3-A5A2-AF4435A5F8B5.svs"
+    },
+    {
+        "position": [
+            5671,
+            3322
+        ],
+        "size": [
+            915,
+            1438
+        ],
+        "level": 2,
+        "angle": -115,
+        "wsi_dir": "efed91ed-3aea-486a-bfed-b14fbc8f2d3e",
+        "wsi_name": "TCGA-EW-A423-01Z-00-DX2.5EF1CF39-600A-4ED3-A5A2-AF4435A5F8B5.svs"
+    },
+    {
+        "position": [
+            2139,
+            1099
+        ],
+        "size": [
+            1376,
+            1245
+        ],
+        "level": 3,
+        "angle": -65,
+        "wsi_dir": "efed91ed-3aea-486a-bfed-b14fbc8f2d3e",
+        "wsi_name": "TCGA-EW-A423-01Z-00-DX2.5EF1CF39-600A-4ED3-A5A2-AF4435A5F8B5.svs"
+    },
+    {
+        "position": [
+            1801,
+            1712
+        ],
+        "size": [
+            1084,
+            1087
+        ],
+        "level": 3,
+        "angle": 114,
+        "wsi_dir": "efed91ed-3aea-486a-bfed-b14fbc8f2d3e",
+        "wsi_name": "TCGA-EW-A423-01Z-00-DX2.5EF1CF39-600A-4ED3-A5A2-AF4435A5F8B5.svs"
+    },
+    {
+        "position": [
+            2817,
+            1909
+        ],
+        "size": [
+            1607,
+            1061
+        ],
+        "level": 3,
+        "angle": -115,
+        "wsi_dir": "efed91ed-3aea-486a-bfed-b14fbc8f2d3e",
+        "wsi_name": "TCGA-EW-A423-01Z-00-DX2.5EF1CF39-600A-4ED3-A5A2-AF4435A5F8B5.svs"
+    },
+    {
+        "position": [
+            3520,
+            1653
+        ],
+        "size": [
+            547,
+            979
+        ],
+        "level": 2,
+        "angle": 96,
+        "wsi_dir": "4ee14819-c89c-48e8-b4ae-57a98757e436",
+        "wsi_name": "TCGA-BH-A0E9-01Z-00-DX1.5FC4A5E1-3984-4869-9FFB-C0C7F9EAF5FE.svs"
+    },
+    {
+        "position": [
+            3973,
+            1479
+        ],
+        "size": [
+            1450,
+            1051
+        ],
+        "level": 2,
+        "angle": 1,
+        "wsi_dir": "4ee14819-c89c-48e8-b4ae-57a98757e436",
+        "wsi_name": "TCGA-BH-A0E9-01Z-00-DX1.5FC4A5E1-3984-4869-9FFB-C0C7F9EAF5FE.svs"
+    },
+    {
+        "position": [
+            1592,
+            1373
+        ],
+        "size": [
+            1016,
+            985
+        ],
+        "level": 2,
+        "angle": -27,
+        "wsi_dir": "4ee14819-c89c-48e8-b4ae-57a98757e436",
+        "wsi_name": "TCGA-BH-A0E9-01Z-00-DX1.5FC4A5E1-3984-4869-9FFB-C0C7F9EAF5FE.svs"
+    },
+    {
+        "position": [
+            1200,
+            1741
+        ],
+        "size": [
+            728,
+            975
+        ],
+        "level": 3,
+        "angle": -167,
+        "wsi_dir": "4ee14819-c89c-48e8-b4ae-57a98757e436",
+        "wsi_name": "TCGA-BH-A0E9-01Z-00-DX1.5FC4A5E1-3984-4869-9FFB-C0C7F9EAF5FE.svs"
+    },
+    {
+        "position": [
+            2019,
+            667
+        ],
+        "size": [
+            1114,
+            1216
+        ],
+        "level": 3,
+        "angle": -97,
+        "wsi_dir": "4ee14819-c89c-48e8-b4ae-57a98757e436",
+        "wsi_name": "TCGA-BH-A0E9-01Z-00-DX1.5FC4A5E1-3984-4869-9FFB-C0C7F9EAF5FE.svs"
+    },
+    {
+        "position": [
+            1022,
+            797
+        ],
+        "size": [
+            516,
+            496
+        ],
+        "level": 3,
+        "angle": -129,
+        "wsi_dir": "4ee14819-c89c-48e8-b4ae-57a98757e436",
+        "wsi_name": "TCGA-BH-A0E9-01Z-00-DX1.5FC4A5E1-3984-4869-9FFB-C0C7F9EAF5FE.svs"
+    },
+    {
+        "position": [
+            2888,
+            2081
+        ],
+        "size": [
+            1722,
+            1020
+        ],
+        "level": 2,
+        "angle": -24,
+        "wsi_dir": "1dbf9ffd-1713-4984-b536-df906f16ec18",
+        "wsi_name": "TCGA-E9-A1R3-01Z-00-DX1.779642c7-b3b0-4ff2-af97-201d4bcfc197.svs"
+    },
+    {
+        "position": [
+            3879,
+            2486
+        ],
+        "size": [
+            1466,
+            1141
+        ],
+        "level": 2,
+        "angle": 152,
+        "wsi_dir": "1dbf9ffd-1713-4984-b536-df906f16ec18",
+        "wsi_name": "TCGA-E9-A1R3-01Z-00-DX1.779642c7-b3b0-4ff2-af97-201d4bcfc197.svs"
+    },
+    {
+        "position": [
+            3215,
+            1888
+        ],
+        "size": [
+            621,
+            1314
+        ],
+        "level": 2,
+        "angle": 134,
+        "wsi_dir": "1dbf9ffd-1713-4984-b536-df906f16ec18",
+        "wsi_name": "TCGA-E9-A1R3-01Z-00-DX1.779642c7-b3b0-4ff2-af97-201d4bcfc197.svs"
+    },
+    {
+        "position": [
+            1557,
+            848
+        ],
+        "size": [
+            1310,
+            871
+        ],
+        "level": 3,
+        "angle": 72,
+        "wsi_dir": "1dbf9ffd-1713-4984-b536-df906f16ec18",
+        "wsi_name": "TCGA-E9-A1R3-01Z-00-DX1.779642c7-b3b0-4ff2-af97-201d4bcfc197.svs"
+    },
+    {
+        "position": [
+            1674,
+            1140
+        ],
+        "size": [
+            689,
+            952
+        ],
+        "level": 3,
+        "angle": 163,
+        "wsi_dir": "1dbf9ffd-1713-4984-b536-df906f16ec18",
+        "wsi_name": "TCGA-E9-A1R3-01Z-00-DX1.779642c7-b3b0-4ff2-af97-201d4bcfc197.svs"
+    },
+    {
+        "position": [
+            1007,
+            930
+        ],
+        "size": [
+            1118,
+            771
+        ],
+        "level": 3,
+        "angle": -96,
+        "wsi_dir": "1dbf9ffd-1713-4984-b536-df906f16ec18",
+        "wsi_name": "TCGA-E9-A1R3-01Z-00-DX1.779642c7-b3b0-4ff2-af97-201d4bcfc197.svs"
+    },
+    {
+        "position": [
+            2271,
+            1216
+        ],
+        "size": [
+            620,
+            1005
+        ],
+        "level": 2,
+        "angle": 147,
+        "wsi_dir": "c8a58a59-27ba-4a96-9862-f07c8bbc294b",
+        "wsi_name": "TCGA-E9-A6HE-01Z-00-DX1.97514DBA-9BC0-4554-9A43-99C48C6B953A.svs"
+    },
+    {
+        "position": [
+            2615,
+            2908
+        ],
+        "size": [
+            1899,
+            1178
+        ],
+        "level": 2,
+        "angle": 113,
+        "wsi_dir": "c8a58a59-27ba-4a96-9862-f07c8bbc294b",
+        "wsi_name": "TCGA-E9-A6HE-01Z-00-DX1.97514DBA-9BC0-4554-9A43-99C48C6B953A.svs"
+    },
+    {
+        "position": [
+            1999,
+            2041
+        ],
+        "size": [
+            848,
+            1889
+        ],
+        "level": 2,
+        "angle": 79,
+        "wsi_dir": "c8a58a59-27ba-4a96-9862-f07c8bbc294b",
+        "wsi_name": "TCGA-E9-A6HE-01Z-00-DX1.97514DBA-9BC0-4554-9A43-99C48C6B953A.svs"
+    },
+    {
+        "position": [
+            724,
+            1335
+        ],
+        "size": [
+            853,
+            873
+        ],
+        "level": 3,
+        "angle": 83,
+        "wsi_dir": "c8a58a59-27ba-4a96-9862-f07c8bbc294b",
+        "wsi_name": "TCGA-E9-A6HE-01Z-00-DX1.97514DBA-9BC0-4554-9A43-99C48C6B953A.svs"
+    },
+    {
+        "position": [
+            1699,
+            1060
+        ],
+        "size": [
+            632,
+            869
+        ],
+        "level": 3,
+        "angle": 157,
+        "wsi_dir": "c8a58a59-27ba-4a96-9862-f07c8bbc294b",
+        "wsi_name": "TCGA-E9-A6HE-01Z-00-DX1.97514DBA-9BC0-4554-9A43-99C48C6B953A.svs"
+    },
+    {
+        "position": [
+            1051,
+            1130
+        ],
+        "size": [
+            546,
+            738
+        ],
+        "level": 3,
+        "angle": -7,
+        "wsi_dir": "c8a58a59-27ba-4a96-9862-f07c8bbc294b",
+        "wsi_name": "TCGA-E9-A6HE-01Z-00-DX1.97514DBA-9BC0-4554-9A43-99C48C6B953A.svs"
+    },
+    {
+        "position": [
+            1643,
+            1369
+        ],
+        "size": [
+            557,
+            458
+        ],
+        "level": 2,
+        "angle": -152,
+        "wsi_dir": "a5abd9c6-dfa2-4fc0-8ee5-bdfff7f15997",
+        "wsi_name": "TCGA-AC-A2FM-01Z-00-DX1.5D2309D5-C47B-4B04-B7B8-2F0685842889.svs"
+    },
+    {
+        "position": [
+            1496,
+            666
+        ],
+        "size": [
+            596,
+            500
+        ],
+        "level": 2,
+        "angle": 105,
+        "wsi_dir": "a5abd9c6-dfa2-4fc0-8ee5-bdfff7f15997",
+        "wsi_name": "TCGA-AC-A2FM-01Z-00-DX1.5D2309D5-C47B-4B04-B7B8-2F0685842889.svs"
+    },
+    {
+        "position": [
+            2277,
+            1191
+        ],
+        "size": [
+            1376,
+            654
+        ],
+        "level": 2,
+        "angle": 30,
+        "wsi_dir": "a5abd9c6-dfa2-4fc0-8ee5-bdfff7f15997",
+        "wsi_name": "TCGA-AC-A2FM-01Z-00-DX1.5D2309D5-C47B-4B04-B7B8-2F0685842889.svs"
+    },
+    {
+        "position": [
+            1444,
+            693
+        ],
+        "size": [
+            1110,
+            575
+        ],
+        "level": 2,
+        "angle": -104,
+        "wsi_dir": "8aecf9c0-9777-4ed3-b5cc-c857a0291b6c",
+        "wsi_name": "TCGA-AC-A2FB-01Z-00-DX1.A4D93E32-BBD7-45E4-8ACF-3724B059ECBC.svs"
+    },
+    {
+        "position": [
+            2879,
+            1134
+        ],
+        "size": [
+            559,
+            603
+        ],
+        "level": 2,
+        "angle": -94,
+        "wsi_dir": "8aecf9c0-9777-4ed3-b5cc-c857a0291b6c",
+        "wsi_name": "TCGA-AC-A2FB-01Z-00-DX1.A4D93E32-BBD7-45E4-8ACF-3724B059ECBC.svs"
+    },
+    {
+        "position": [
+            2140,
+            706
+        ],
+        "size": [
+            1429,
+            474
+        ],
+        "level": 2,
+        "angle": -141,
+        "wsi_dir": "8aecf9c0-9777-4ed3-b5cc-c857a0291b6c",
+        "wsi_name": "TCGA-AC-A2FB-01Z-00-DX1.A4D93E32-BBD7-45E4-8ACF-3724B059ECBC.svs"
+    },
+    {
+        "position": [
+            1773,
+            3505
+        ],
+        "size": [
+            1853,
+            1932
+        ],
+        "level": 2,
+        "angle": -166,
+        "wsi_dir": "b4b672d5-b1cf-4d98-90ed-bb2ad4efebde",
+        "wsi_name": "TCGA-A2-A0YK-01Z-00-DX1.FB23FC30-B3B2-452A-A6B0-94129B333207.svs"
+    },
+    {
+        "position": [
+            2726,
+            2930
+        ],
+        "size": [
+            1444,
+            558
+        ],
+        "level": 2,
+        "angle": 69,
+        "wsi_dir": "b4b672d5-b1cf-4d98-90ed-bb2ad4efebde",
+        "wsi_name": "TCGA-A2-A0YK-01Z-00-DX1.FB23FC30-B3B2-452A-A6B0-94129B333207.svs"
+    },
+    {
+        "position": [
+            3575,
+            2238
+        ],
+        "size": [
+            493,
+            1801
+        ],
+        "level": 2,
+        "angle": 96,
+        "wsi_dir": "b4b672d5-b1cf-4d98-90ed-bb2ad4efebde",
+        "wsi_name": "TCGA-A2-A0YK-01Z-00-DX1.FB23FC30-B3B2-452A-A6B0-94129B333207.svs"
+    },
+    {
+        "position": [
+            1663,
+            1209
+        ],
+        "size": [
+            1141,
+            700
+        ],
+        "level": 3,
+        "angle": -141,
+        "wsi_dir": "b4b672d5-b1cf-4d98-90ed-bb2ad4efebde",
+        "wsi_name": "TCGA-A2-A0YK-01Z-00-DX1.FB23FC30-B3B2-452A-A6B0-94129B333207.svs"
+    },
+    {
+        "position": [
+            1041,
+            675
+        ],
+        "size": [
+            1072,
+            815
+        ],
+        "level": 3,
+        "angle": -143,
+        "wsi_dir": "b4b672d5-b1cf-4d98-90ed-bb2ad4efebde",
+        "wsi_name": "TCGA-A2-A0YK-01Z-00-DX1.FB23FC30-B3B2-452A-A6B0-94129B333207.svs"
+    },
+    {
+        "position": [
+            1900,
+            1523
+        ],
+        "size": [
+            1049,
+            551
+        ],
+        "level": 3,
+        "angle": -117,
+        "wsi_dir": "b4b672d5-b1cf-4d98-90ed-bb2ad4efebde",
+        "wsi_name": "TCGA-A2-A0YK-01Z-00-DX1.FB23FC30-B3B2-452A-A6B0-94129B333207.svs"
+    },
+    {
+        "position": [
+            6472,
+            1235
+        ],
+        "size": [
+            1712,
+            1187
+        ],
+        "level": 2,
+        "angle": 6,
+        "wsi_dir": "fc652741-60ae-4207-9c08-4290e43a28ff",
+        "wsi_name": "TCGA-A7-A56D-01Z-00-DX1.87D9CCF4-04EE-46D2-B7FC-A83561D7752C.svs"
+    },
+    {
+        "position": [
+            6691,
+            1318
+        ],
+        "size": [
+            772,
+            1156
+        ],
+        "level": 2,
+        "angle": -65,
+        "wsi_dir": "fc652741-60ae-4207-9c08-4290e43a28ff",
+        "wsi_name": "TCGA-A7-A56D-01Z-00-DX1.87D9CCF4-04EE-46D2-B7FC-A83561D7752C.svs"
+    },
+    {
+        "position": [
+            1319,
+            341
+        ],
+        "size": [
+            1257,
+            397
+        ],
+        "level": 3,
+        "angle": 4,
+        "wsi_dir": "fc652741-60ae-4207-9c08-4290e43a28ff",
+        "wsi_name": "TCGA-A7-A56D-01Z-00-DX1.87D9CCF4-04EE-46D2-B7FC-A83561D7752C.svs"
+    },
+    {
+        "position": [
+            964,
+            232
+        ],
+        "size": [
+            463,
+            373
+        ],
+        "level": 3,
+        "angle": 169,
+        "wsi_dir": "fc652741-60ae-4207-9c08-4290e43a28ff",
+        "wsi_name": "TCGA-A7-A56D-01Z-00-DX1.87D9CCF4-04EE-46D2-B7FC-A83561D7752C.svs"
+    },
+    {
+        "position": [
+            1218,
+            349
+        ],
+        "size": [
+            603,
+            356
+        ],
+        "level": 3,
+        "angle": -28,
+        "wsi_dir": "fc652741-60ae-4207-9c08-4290e43a28ff",
+        "wsi_name": "TCGA-A7-A56D-01Z-00-DX1.87D9CCF4-04EE-46D2-B7FC-A83561D7752C.svs"
+    },
+    {
+        "position": [
+            2079,
+            1760
+        ],
+        "size": [
+            1031,
+            1185
+        ],
+        "level": 2,
+        "angle": 7,
+        "wsi_dir": "75f48929-04a3-4970-8572-29b1068b2d85",
+        "wsi_name": "TCGA-D8-A147-01Z-00-DX1.159094F2-BB78-4910-B7AE-3D7CAAB1DAD9.svs"
+    },
+    {
+        "position": [
+            3993,
+            3299
+        ],
+        "size": [
+            1001,
+            714
+        ],
+        "level": 2,
+        "angle": 75,
+        "wsi_dir": "75f48929-04a3-4970-8572-29b1068b2d85",
+        "wsi_name": "TCGA-D8-A147-01Z-00-DX1.159094F2-BB78-4910-B7AE-3D7CAAB1DAD9.svs"
+    },
+    {
+        "position": [
+            2286,
+            1146
+        ],
+        "size": [
+            1635,
+            1543
+        ],
+        "level": 2,
+        "angle": 169,
+        "wsi_dir": "75f48929-04a3-4970-8572-29b1068b2d85",
+        "wsi_name": "TCGA-D8-A147-01Z-00-DX1.159094F2-BB78-4910-B7AE-3D7CAAB1DAD9.svs"
+    },
+    {
+        "position": [
+            1610,
+            579
+        ],
+        "size": [
+            857,
+            612
+        ],
+        "level": 3,
+        "angle": -126,
+        "wsi_dir": "75f48929-04a3-4970-8572-29b1068b2d85",
+        "wsi_name": "TCGA-D8-A147-01Z-00-DX1.159094F2-BB78-4910-B7AE-3D7CAAB1DAD9.svs"
+    },
+    {
+        "position": [
+            797,
+            1201
+        ],
+        "size": [
+            1194,
+            906
+        ],
+        "level": 3,
+        "angle": 46,
+        "wsi_dir": "75f48929-04a3-4970-8572-29b1068b2d85",
+        "wsi_name": "TCGA-D8-A147-01Z-00-DX1.159094F2-BB78-4910-B7AE-3D7CAAB1DAD9.svs"
+    },
+    {
+        "position": [
+            1334,
+            1074
+        ],
+        "size": [
+            776,
+            1027
+        ],
+        "level": 3,
+        "angle": -60,
+        "wsi_dir": "75f48929-04a3-4970-8572-29b1068b2d85",
+        "wsi_name": "TCGA-D8-A147-01Z-00-DX1.159094F2-BB78-4910-B7AE-3D7CAAB1DAD9.svs"
+    }
+]

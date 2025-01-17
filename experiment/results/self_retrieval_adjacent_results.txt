@@ -1,0 +1,16 @@
+Experiment Date: 2025-01-14 11:51:02
+--------------------------------------------------
+Parameters: Regino Retrieval with adjacent method, date=2025-01-14
+@1 IOU Avg: 0.0000, SIM Avg: 26.4152
+@3 IOU Avg: 0.0000, SIM Avg: 26.3833
+@5 IOU Avg: 0.0000, SIM Avg: 26.3714
+Running Times: 183.4111
+
+Experiment Date: 2025-01-14 18:19:25
+--------------------------------------------------
+Parameters: Regino Retrieval with adjacent method, date=2025-01-14
+@1 IOU Avg: 0.0000, SIM Avg: 0.2562
+@3 IOU Avg: 0.0000, SIM Avg: 0.2454
+@5 IOU Avg: 0.0000, SIM Avg: 0.2398
+Running Times: 233.6665
+
