@@ -1,8 +1,4 @@
-import sys, requests, os, timm, torch, asyncio, json
-sys.path.append("/hpc2hdd/home/rsu704/MDI_RAG_project/MDI_RAG_Image2Image_Research/")
-import numpy as np
-from tqdm import tqdm
-from torchvision import transforms
+import os, torch, asyncio, json
 from torch.utils.data import DataLoader
 from openslide import OpenSlide
 from torch.utils.data import DataLoader
@@ -10,7 +6,7 @@ import multiprocessing as mp
 
 from src.utils.basic.wsi_dataset import WSIImageDataset
 from src.utils.basic.encoder import WSI_Image_UNI_Encoder
-from src.utils.open_wsi.backgound import load_wsi_thumbnail, WSI_background_detect, get_patch_background_ratio
+from src.utils.open_wsi.backgound import load_wsi_thumbnail, get_patch_background_ratio
 
 
 
@@ -26,7 +22,6 @@ class Embedding_loader():
         self.loaded_embeddings = os.listdir(self.cache_path)
 
     async def load_wsi_patches(self, file_name):
-        """异步加载 WSI 文件路径"""
         file_path = os.path.join(self.wsi_file_path, file_name)
         subfile_names = os.listdir(file_path)
         wsi_path = ""
@@ -38,7 +33,6 @@ class Embedding_loader():
             print(f"Can not find the WSI file in {file_path}.")
             return None
         
-        # 准备 slide 和背景缩略图
         slide = OpenSlide(wsi_path)
         _, background, _ = load_wsi_thumbnail(slide)
 
@@ -53,13 +47,13 @@ class Embedding_loader():
 
                     infos = {
                         "wsi_name":wsi_path.split("/")[-1],
-                        "position":(w, h),    # basic on current level (左上角)
+                        "position":(w, h),
                         "level":level,
                         "size":patch_size,
                     }
                     
                     _, white_pixel_ratio = get_patch_background_ratio(slide, background, infos)
-                    if white_pixel_ratio < 0.95:            # 通过阈值判断是否为背景
+                    if white_pixel_ratio < 0.95:       
                         image = slide.read_region(ture_pos, level, patch_size)
                         image = image.convert('RGB')
 
@@ -69,7 +63,6 @@ class Embedding_loader():
         return loaded_images, loaded_infos
         
     async def loading_wsi_images(self, wsi_name):
-        """在 CPU 上异步获取 WSI patch 的 Dataloader。"""
         images, infos = await self.load_wsi_patches(wsi_name)
         wsi_dataset = WSIImageDataset(images, self.wsi_patch_encoder.transform)
         dataloader = DataLoader(wsi_dataset, batch_size=128, shuffle=False, num_workers=16, pin_memory=True)
@@ -77,7 +70,6 @@ class Embedding_loader():
         return infos, dataloader
 
     def loading_worker(self, input_queue, output_queue):
-        """加载 WSI 图像的工作进程。"""
         while True:
             wsi_name = input_queue.get()
             if wsi_name is None:
@@ -91,7 +83,6 @@ class Embedding_loader():
                 output_queue.put((wsi_name, patch_infos, dataloader))
 
     def encoding_worker(self, input_queue):
-        """编码 WSI 图像的工作进程。"""
         while True:
             item = input_queue.get()
             if item is None:
@@ -99,7 +90,7 @@ class Embedding_loader():
 
             wsi_name, patch_infos, dataloader = item
             if patch_infos != [] and dataloader != []:
-                patch_embeddings = self.wsi_patch_encoder.encode_wsi_patch(wsi_name, dataloader, show=True)       # 这里出来的是一个 tensor 的 list
+                patch_embeddings = self.wsi_patch_encoder.encode_wsi_patch(wsi_name, dataloader, show=True)     
                 patch_embeddings = torch.concat(patch_embeddings, dim=0).tolist()
 
                 dir_path = os.path.join(self.cache_path, wsi_name)

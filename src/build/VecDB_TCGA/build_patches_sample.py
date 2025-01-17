@@ -1,5 +1,4 @@
-import os, sys, json, qdrant_client, uuid
-sys.path.append("/hpc2hdd/home/rsu704/MDI_RAG_project/MDI_RAG_Image2Image_Research/")
+import os, json, qdrant_client, uuid
 from tqdm import tqdm
 from datetime import datetime
 from qdrant_client.http import models as rest

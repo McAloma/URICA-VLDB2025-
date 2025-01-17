@@ -1,33 +1,15 @@
-import sys, torch, random
-sys.path.append("/hpc2hdd/home/rsu704/MDI_RAG_project/MDI_RAG_Image2Image_Research/")
+import torch
 import numpy as np
 from PIL import Image
 import matplotlib.pyplot as plt
 from torch.utils.data import DataLoader
-import numpy as np
 from scipy import interpolate
-from scipy.spatial.distance import cdist
-import matplotlib.pyplot as plt
-import numpy as np
-import matplotlib.pyplot as plt
 import matplotlib.patches as patches
 from scipy.spatial.distance import cdist
 
-from scipy.interpolate import RegularGridInterpolator
 
 from src.utils.basic.wsi_dataset import WSIImageDataset
 
-
-
-# 给你一个二维列表，列表中的每个元素都是一个 1024维的向量代表每个点的语义表征，请你用 python 通过以步骤 k 个组合：
-
-# Step 1: 获得所有 anchor 的语义空间表征，获得平均表征并获得所有 Embedding 在垂直于平均表征的平面上的投影；
-# Step 2: 基于相邻点之间的表征，通过cosine相似度，获得所有点的 semantic force 方向；
-# Step 3: 通过固定步骤进行 denaturation，每一步把 force 传递到相邻点上，并进行更新；
-# Step 4: 基于构建的 field 的散度值最低的 k 个点来选择 target anchor。
-# Step 5: 基于选择的的 target anchor 重新投影其他点的 anchor 表征，并在这上面找到相似度最低的 k 个点作为 valid point。
-
-# 其中每个组合带有一个 target anchor 和 k 个 valid point。
 
 
 def plot_arrow_on_image(image, position_matrix, direction_matrix, output_path, alpha=0.5, arrow_scale=50):

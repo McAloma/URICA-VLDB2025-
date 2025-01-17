@@ -1,5 +1,4 @@
-import sys, torch, cv2
-sys.path.append("/hpc2hdd/home/rsu704/MDI_RAG_project/MDI_RAG_Image2Image_Research/")
+import torch, cv2
 import numpy as np
 import matplotlib.pyplot as plt
 from torch.utils.data import DataLoader

@@ -1,5 +1,4 @@
-import os, sys, json, qdrant_client, uuid
-sys.path.append("/hpc2hdd/home/rsu704/MDI_RAG_project/MDI_RAG_Image2Image_Research/")
+import os, json, qdrant_client, uuid
 from tqdm import tqdm
 from datetime import datetime
 from qdrant_client.http import models as rest
@@ -110,7 +109,4 @@ if __name__ == "__main__":
     mp.set_start_method('spawn')
     builder = WSI_Image_Vector_DB_Builder()
     wsi_names_list = os.listdir(builder.embed_cache_path)
-    # wsi_names_list = [
-    #     "ec8a032c-3f3e-4cb4-bb33-14b892b1f708",
-    # ]
     builder.main(wsi_names_list)  
