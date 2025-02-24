@@ -1,0 +1,2 @@
+id	filename	md5	size	state
+9a536afe-e38d-4270-bc1b-c0ea642cc4d8	TCGA-BP-4775-01A-01-TS1.e9eb861b-be79-49fd-a908-5a8a1991099b.svs	870113d45ab7d6d849db37ff2872133e	121674295	released

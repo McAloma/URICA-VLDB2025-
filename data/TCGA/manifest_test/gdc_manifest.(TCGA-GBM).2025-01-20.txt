@@ -1,0 +1,2 @@
+id	filename	md5	size	state
+3b7d387a-7854-449f-832b-0054985518d4	TCGA-14-3476-01B-01-TS1.5bad3783-e461-4c14-aabf-56eddcbeaa07.svs	5ca26be9b836713c30c68434462e378a	155312257	released

@@ -1,0 +1,2 @@
+id	filename	md5	size	state
+0161f8fa-ebec-4176-aede-0209b378ac0b	TCGA-HF-7131-01A-01-TS1.e81e766e-480a-4d8a-943f-8258501c0c91.svs	67afdd3d9a9b12fb9c6fe44ada41eee8	85437587	released

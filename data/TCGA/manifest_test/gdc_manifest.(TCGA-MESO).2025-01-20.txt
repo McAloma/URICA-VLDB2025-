@@ -1,0 +1,2 @@
+id	filename	md5	size	state
+5016fd63-bdc0-4a62-9e6a-ccfa03ed3cad	TCGA-XT-AASU-11A-01-TSA.C37FF230-EA8C-4F8F-AED0-914E482F3DA6.svs	f91f6e6f07e615c1e3b37ac9eb8d5b64	57106441	released

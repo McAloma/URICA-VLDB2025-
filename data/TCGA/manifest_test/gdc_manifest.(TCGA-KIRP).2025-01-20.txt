@@ -1,0 +1,2 @@
+id	filename	md5	size	state
+51df2002-ccc7-436b-aaae-8a464833eed6	TCGA-DW-5560-01Z-00-DX1.d3da6f16-6a12-417b-8555-585f5097d4f4.svs	bf30bfcccecd2fd57a39b594a285d65c	1509107511	released

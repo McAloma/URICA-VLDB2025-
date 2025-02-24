@@ -1,9 +1,0 @@
-
-Experiment Date: 2025-01-13 19:19:09
---------------------------------------------------
-Parameters: preprocess=spectral, evaluation=boc, date=2025-01-13
-SIM Avg: 1.0000
-SIM Avg: 0.3333
-SIM Avg: 0.2000
-Running Times: 481.3007
-

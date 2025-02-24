@@ -1,0 +1,2 @@
+id	filename	md5	size	state
+8c0c98f4-cbbc-4ae2-97a5-d366f2d0febf	TCGA-AX-A06J-01A-01-BS1.ae5db9f1-f67c-4989-817a-1325ebff6d96.svs	18c99261f468dc2adc4a1418c5b4c134	225181197	released

@@ -1,8 +1,0 @@
-Experiment Date: 2025-01-13 15:47:59
---------------------------------------------------
-Parameters: Extra_region retrieval experiment with align method, date=2025-01-13
-@1 mPD Avg: 0.1456, SIM Avg: 0.1301
-@3 mPD Avg: 0.0575, SIM Avg: 0.0858
-@5 mPD Avg: 0.0354, SIM Avg: 0.0667
-Running Times: 6.2435
-
